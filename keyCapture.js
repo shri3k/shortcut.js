@@ -9,8 +9,8 @@ var obj = {
 };
 
 function addShortcut(ob) {
-	state = false;
-	var key = Object.keys(ob);
+	'use strict';
+	var state = false;
 	document.onkeyup = function(e) {
 		if (state && e.key in obj) {
 			console.log(e.keyCode);
